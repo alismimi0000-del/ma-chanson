@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Chanson - Song Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-section">
+                <h1>🎵 Ma Chanson</h1>
+                <p class="subtitle">Transform Your Name Into Music ♥</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-section">
+                <h2>✍️ Create Your Song</h2>
+                <p class="description">Enter your name and let the magic happen...</p>
+                
+                <div class="input-group">
+                    <label for="nameInput">Your Name:</label>
+                    <input 
+                        type="text" 
+                        id="nameInput" 
+                        placeholder="Enter your name..." 
+                        class="input-field"
+                    >
+                </div>
+
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">🎵 Generate Song</button>
+                    <button id="resetBtn" class="btn btn-secondary">🔄 New Song</button>
+                </div>
+            </div>
+
+            <div class="song-section" id="songSection" style="display: none;">
+                <h2>♥ Your Personal Song</h2>
+                <div class="song-display" id="songDisplay"></div>
+                <p class="song-footer">La musique, c'est la vie ♥</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
